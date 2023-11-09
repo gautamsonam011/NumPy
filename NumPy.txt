@@ -1,0 +1,240 @@
+~~~~~~~~~~~~~Numpy In Python~~~~~~~~~~~~~~~
+
+1:- What is NumPy?
+2:- What is NumPy Array?
+3:- NumPy vs Python List
+4:- Installation & Import NumPy
+5:- Importance of numpy in python
+
+
+1:- What is NumPy?:----------
+
+-> NumPy is the fundamental package for scientific computing in Python.
+-> NumPy is a Python library that provides a multidimensional array object, various derived objects.
+
+2:- What is NumPy Array?---------->
+
+-> An array is a grid of values and it contains imformation about the raw data, how to locate an element, and how to interpret an element.
+
+1D array     2D array          3D array
+shape:(4,)   shape:(2,3)       shape: (4,3,2)
+
+3:- NumPy vs Python List>>>>>>>>>>>>
+
+* Advantages of using NumPy Arrays Over Python Lists:-
+-> consumes less memory.
+-> fast as compared to the python List.
+-> conveniet to use
+
+list  -> [1,2,3,4,5]  list comma separated
+array -> [1 2 3 4 5]
+
+4:- Installation & Import NumPy:-
+
+* Installation NumPy
+-> pip install numpy
+
+* Import NumPy
+-> Import numpy as np
+
+5:- Importance of numpy in python-->
+
+-> wide variety of mathematical operations on araays.
+-> It supplier an enormous library of high-level mathematical fuctions that operaate on these arrays and matrices.
+-> Mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statical operations, random simulation and much more.
+
+6:- Difference Between NumPy Array and List in Python:_______
+-> Data types storage
+-> Importing module
+-> Numerical operation
+-> Modification capabilities
+-> Consumes less memory
+-> Fast as compared to the python list
+-> Convenient to use
+
+% timeit use for timecalculation
+%% timeit use for whole excutive program's time
+
+7:- How to create NumPy Array?~~~~~~~~~~~~~>
+
+-> To create a NumPy array, you can use the function np.array().
+
+import numpy as np
+
+a = np.array([1,2,3])
+print(a)
+
+command 
+                                  NumPy Array
+np.array([1,2,3])             =>  | 1  |
+								                          | 2  |
+                                  | 3	|
+
+Type of dimensions in array:---
+1-D Array    [1 2 3 4]
+2-D Array    [[1 2 3 4 ]]
+3-D Array    [[[1 2 3 4]]]
+Higher Dimensional Arrays
+
+ndim use for which type of dimesion
+
+8-> How to create Numpy array using NumPy Function?:~~~~~~~~~>
+
+* Special NumPy Array:------->
+-> Array filled with 0's 
+-> Array filled with 1's
+-> Create an empty array
+-> An array with a range of elements
+-> Array diagonal element filled with 1's
+-> Create an array with values that are spaced linearly in a specified interval.
+
+9:- How to Create NumPy Arrays with Random Numbers|Machine Learning?
+
+-> rand(): The function is used to generate a random value between 0 to 1.
+-> randn(): The function is used to generate a random value close to zero. This may return positive or negative numbers as well.
+-> ranf(): The function for doing random sampling in numpy. It returns array of specified shape and fills it with random floats in the half open interval[0.0, 1.0].
+-> randint(): The function is used to generate a random number given range.
+
+
+
+			
+10:- Data Types in NumPy Arrays:-------------------->
+
+Sr.No.         Data Types                   Description
+1              bool_                       Boolean (True or False) stored as a byte
+2              int_                        Default integer type (same as C long; normally either int 64 or int 32)
+3              Intc                        Identical to C int (normally int32 or int64)
+4              Intp                        Integer used for idexing (same as C ssize_; normally either int32 or int64)
+5              int8                        Byte (-128 to 127)
+6              int16                       Integer (-32768 to 32767)
+7              int32                       Integer (-2147483648 to 2147483647)
+8              int64                       Integer (-9223372036854775808 to 9223372036854775807)
+9              uint8                       Unsigned integer (0 to 255)
+10             uint16                      Unsigned integer (0 to 65535)
+11             uint32                      Unsigned integer (0 to 4294967295)
+12             uint64                      Unsigned integer (0 to 18446744073709551615)
+13             float_                      Shorthand for float64
+14             float16                     Half precision float: sign bit, 5 bits exponent, 10 bits mantissa
+15             float32                     Single precision float: sign bit, 8 bits exponent bits mantissa
+16             float64                     Double precision float: sign bit, 11 bits exponent bits mantissa
+17             complex_                    Shorthand for complex128
+18             complex64                   Complex number, represented by two 32-bit floats (real and imaginary components)
+19             complex128                  Complex number, represented by two 64-bit floats (real and imaginary components)
+
+
+11:- Data Types as Function:------------------------->
+
+List of characters that are used to represent dtype in NumPy:
+
+i-               integer
+b-               boolean
+u-               unsigned integer
+f-               float
+c-               complex float
+m-               timedelta
+M-               datetime
+O-               object
+S-               string
+U-               Unicode string
+V-               the fixed chunk of memory for other types(void)
+
+12:- Arithmetic Operation in NumPy :---------------->
+
+-> a+b              np.add(a,b)
+-> a-b              np.subtract(a,b)
+-> a*b              np.multiply(a,b)
+-> a/b              np.divide(a,b)
+-> a%b              np.mod(a,b)
+-> a**b             np.power(a,b)
+-> 1/a              np.reciprocal(a)
+
+13:- Arithmetic Functions:---------------------->
+
+np.min(x)
+np.max(x)
+np.argmin(x)
+np.sqrt(x)
+np.sin(x)
+np.cos(x)
+np.cumsum(x)
+
+axis 0  => column
+axis 1  => row
+
+14:- Shape & Reshaping in NumPy Arrays:------------------->
+
+x.shape(row,elements)
+x.reshape(row,elements)
+
+15:- Broadcasting NumPy Arrays:------------------>
+
+v = [1,2,3]
+1*3
+     [1]
+v1 = [2]
+     [3]
+3*1
+
+conditions for addition two matrics
+
+(1):- Same Dimension
+(2):-  (1*3)   (3*1)
+
+16:- Explain Indexing and Slicing in NumPy Arrays in Python:------------->
+
+17:- Iterating NumPy Arrays - Learn NumPy Iteration with nditer function
+18:- Copy vs View NumPy Python Array.
+
+The Difference Detween Copy and view:--------->
+
+The copy owns the data.                                                    The view does not own the data
+The copy of an array is a new array                                        A view of the original array
+The changes made in the copy data does not reflect in the original array.  any changes made to the view will affect the original array, and                                                                            way changes made to the original array will affect the view.
+
+Joining & Split NumPy Arrays Using (concatenate, stack, array_split):--------->
+-> Join Array: Joining means putting contents of two or more arrays in a single array.
+
+1D, 2D, 3D
+
+-> Split Array: Splitting breaks one array into multiple.
+
+19:-What are NumPy Arrays Functions:------------->
+-> Search Array: Search an array for a certain value, and return the indexes that get a match.
+
+-> Search Sorted Array: which performs a binary search in the array, and returns the index where the specified value would be inserted to maintain the search order.
+
+-> Sort Array: Ordered sequence is any sequence that has an order corresponding to  elements, numeric or alphabetical ascending or descending.
+
+-> Filter Array: Getting some elements out of an existing array 
+and creating a new array out of them.
+
+Arithmetic Functions:---------->
+
+-> Shuffle
+-> Unique
+-> Resize
+-> Flatten
+-> Ravel
+
+Order: {'C','F','A','K'}, Optional
+
+-> 'C' means to flatten in row-major (C-style) order.
+-> 'F' means to flatten in column-major (Fortran-style) order.
+-> 'A' means to flatten in column-major order if `a` is Fortran*contiguous* in memory, row-major order otherwise.
+-> 'K' means to flatten `a` in the order the elements occur in memory.
+-> The default is 'C'.
+
+21:- What are NumPy Insert and Delete Arrays Functions?-------->
+
+22:- The concept of matrix numpy arrays in python?->
+
+Arithmetic Operation in Matrix:--------->
+
+23:- Matrix Functions:-
+
+-> Transpose
+-> Swapaxes
+-> Inverse
+-> Power
+-> Determinate
+
